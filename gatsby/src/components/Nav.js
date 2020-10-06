@@ -12,7 +12,7 @@ const NavStyles = styled.nav`
   }
 
   ul {
-    margin: 0;
+    margin: -6rem 0 0;
     padding: 0;
     text-align: center;
     list-style: none;
@@ -50,6 +50,10 @@ const NavStyles = styled.nav`
     text-decoration: none;
 
     &:hover {
+      color: var(--red);
+    }
+
+    &[aria-current='page'] {
       color: var(--red);
     }
   }
